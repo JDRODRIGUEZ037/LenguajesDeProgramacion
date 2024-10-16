@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuento por Compra</title>
+    <style>
+        body {
+            background-color: rgb(37, 230, 37);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            border: 2px solid red;
+            display: inline-block;
+            padding: 20px;
+            background-color: white;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px;
+        }
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora de Descuento</h1>
+    <div class="container">
+        <p>Ingrese el monto de la compra</p>
+        <input type="number" id="monto" placeholder="Monto de la compra">
+        <br>
+        <button onclick="calcularDescuento()">Calcular</button>
+        <div class="result" id="resultado"></div>
+    </div>
+
+    <script src="descuento.js"></script>
+</body>
+</html>

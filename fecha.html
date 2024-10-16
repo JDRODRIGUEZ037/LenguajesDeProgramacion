@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Edad</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #ff00ff;
+    }
+
+    .container {
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    #resultado {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Calculadora de Edad</h2>
+    <label for="dia">Día de Nacimiento:</label>
+    <input type="number" id="dia" min="1" max="31">
+
+    <label for="mes">Mes de Nacimiento:</label>
+    <input type="number" id="mes" min="1" max="12">
+
+    <label for="año">Año de Nacimiento:</label>
+    <input type="number" id="año" min="1900">
+
+    <button onclick= "calcularEdad()">Calcular Edad</button>
+
+    <p id="resultado"></p>
+
+    <script src="fecha.js"></script>
+    
+  </div>
+</body>
+</html>

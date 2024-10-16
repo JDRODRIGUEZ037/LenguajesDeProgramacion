@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuento según la Marca de Moto</title>
+    <style>
+        body {
+            background-color: rgb(235, 115, 237);
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            border: 2px solid red;
+            display: inline-block;
+            padding: 20px;
+            background-color: white;
+        }
+        input, select {
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px;
+        }
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Descuento según la Marca de Moto</h1>
+    <div class="container">
+        <p>Ingrese el valor de la moto</p>
+        <input type="number" id="valorMoto" placeholder="Valor de la moto">
+        <p>Seleccione la marca de la moto</p>
+        <select id="marcaMoto">
+            <option value="HONDA">Honda</option>
+            <option value="YAMAHA">Yamaha</option>
+            <option value="SUZUKI">Suzuki</option>
+            <option value="OTRA">Otra Marca</option>
+        </select>
+        <br>
+        <button onclick="calcularDescuento()">Calcular</button>
+        <div class="result" id="resultado"></div>
+    </div>
+
+    <script src="promocion.js"></script>
+</body>
+</html>

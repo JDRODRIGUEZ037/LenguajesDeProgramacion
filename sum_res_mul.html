@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma, Resta y Multiplicación de 3 Números</title>
+    <style>
+        body {
+            background-color: red;
+            color: white;
+            font-family: monospace;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 50px;
+            text-align: center;
+        }
+
+        button {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Suma, Resta y Multiplicación de 3 Números</h1>
+
+    <label for="numero1">Ingrese el primer número:</label>
+    <input type="text" id="numero1" value="50">
+
+    <br><br>
+
+    <label for="numero2">Ingrese el segundo número:</label>
+    <input type="text" id="numero2" value="25">
+
+    <br><br>
+
+    <label for="numero3">Ingrese el tercer número:</label>
+    <input type="text" id="numero3" value="9">
+
+    <br><br>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <br><br>
+
+    <p id="resultado"></p>
+
+    <script src="sum_res_mul.js"></script>
+    
+</body>
+</html>
